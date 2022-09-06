@@ -10,9 +10,10 @@
 
 [Oh-my-zsh](https://ohmyz.sh/)
 
+`z` (`brew install z`)
+
 # Install
 
 ```
 curl -s https://raw.githubusercontent.com/marcenacp/dotfiles/main/install.sh | /bin/bash
 ```
-

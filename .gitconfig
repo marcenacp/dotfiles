@@ -1,0 +1,13 @@
+[alias]
+  ap = add -p
+  cm = commit -m
+  co = checkout
+  cp = cherry-pick
+  st = status
+[pull]
+  default = current
+[push]
+  default = current
+[user]
+  email = marcenacp@gmail.com
+  name = Pierre Marcenac
