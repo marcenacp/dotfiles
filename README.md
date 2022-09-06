@@ -13,6 +13,6 @@
 # Install
 
 ```
-curl -Lks https://github.com/marcenacp/dotfiles/blob/main/dotfiles/install.sh | /bin/bash
+curl -s https://raw.githubusercontent.com/marcenacp/dotfiles/main/install.sh | /bin/bash
 ```
 
