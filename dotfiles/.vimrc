@@ -8,22 +8,24 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'     " required for Vundle to work
-Plugin 'pangloss/vim-javascript'    " JavaScript support
-Plugin 'leafgarland/typescript-vim' " TypeScript syntax
-Plugin 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
-Plugin 'HerringtonDarkholme/yats.vim' " Support for .tsx files
-Plugin 'jparise/vim-graphql'        " GraphQL syntax
-Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' } " auto completion
 Plugin 'sjl/badwolf'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 Plugin 'sbdchd/neoformat'
 Plugin 'https://github.com/airblade/vim-gitgutter.git'
 Plugin 'mg979/vim-visual-multi'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'jesseleite/vim-agriculture' " make fzf usable
+
+" Plugins for JavaScript
+" Plugin 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+" Plugin 'pangloss/vim-javascript'    " JavaScript support
+" Plugin 'leafgarland/typescript-vim' " TypeScript syntax
+" Plugin 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+" Plugin 'HerringtonDarkholme/yats.vim' " Support for .tsx files
+" Plugin 'jparise/vim-graphql'        " GraphQL syntax
+" Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' } " auto completion
 
 " Fuzzy finder plugin http://ctrlpvim.github.io/ctrlp.vim/#installation
 " Needed by fzf  brew install the_silver_searche
