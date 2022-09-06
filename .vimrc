@@ -8,10 +8,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'     " required for Vundle to work
-Plugin 'sjl/badwolf'
-Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'sjl/badwolf' " a color scheme for Vim
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } } " search
 Plugin 'junegunn/fzf.vim'
-Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'ludovicchabant/vim-gutentags' " tag files
 Plugin 'sbdchd/neoformat'
 Plugin 'https://github.com/airblade/vim-gitgutter.git'
 Plugin 'mg979/vim-visual-multi'
@@ -26,6 +26,7 @@ Plugin 'jesseleite/vim-agriculture' " make fzf usable
 " Plugin 'HerringtonDarkholme/yats.vim' " Support for .tsx files
 " Plugin 'jparise/vim-graphql'        " GraphQL syntax
 " Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' } " auto completion
+" let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 " Fuzzy finder plugin http://ctrlpvim.github.io/ctrlp.vim/#installation
 " Needed by fzf  brew install the_silver_searche
@@ -36,8 +37,7 @@ call vundle#end()            " required
 filetype indent on
 filetype plugin indent on    " required
 
-" auto-completion extension
-let g:coc_global_extensions = [ 'coc-tsserver' ]
+let g:gutentags_trace = 1
 
 " configure ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -96,3 +96,6 @@ let g:tagbar_type_typescript = {
     \ 'p' : 'property',
     \},
 \ }
+
+source $HOME/.vim/google_python_style.vim
+
