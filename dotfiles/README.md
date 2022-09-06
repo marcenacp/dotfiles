@@ -10,3 +10,9 @@
 
 [Oh-my-zsh](https://ohmyz.sh/)
 
+# Install
+
+```
+curl -Lks https://github.com/marcenacp/dotfiles/blob/main/dotfiles/install.sh | /bin/bash
+```
+
